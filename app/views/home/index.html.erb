@@ -16,15 +16,10 @@
 			<% if @birth_rates.nil? %>
 				<p class="lead small weighted red">That neighborhood is not in the system</p>
 			<% else %>
-				<p class="lead small weighted pull-left">Birth Rates</p>
+				<p class="lead small weighted pull-left"></p>
 				<table class="table">
 					<tr>
-						<th>1999</th>
-						<th>2000</th>
-						<th>2001</th>
-						<th>2002</th>
-						<th>2003</th>
-						<th>2004</th>
+						<th></th>
 						<th>2005</th>
 						<th>2006</th>
 						<th>2007</th>
@@ -32,17 +27,28 @@
 						<th>2009</th>
 					</tr>
 					<tr>
-						<td><%= @birth_rates['birth_rate_1999'] %></td>
-						<td><%= @birth_rates['birth_rate_2000'] %></td>
-						<td><%= @birth_rates['birth_rate_2001'] %></td>
-						<td><%= @birth_rates['birth_rate_2002'] %></td>
-						<td><%= @birth_rates['birth_rate_2003'] %></td>
-						<td><%= @birth_rates['birth_rate_2004'] %></td>
+						<td>Birth Rate</td>
 						<td><%= @birth_rates['birth_rate_2005'] %></td>
 						<td><%= @birth_rates['birth_rate_2006'] %></td>
 						<td><%= @birth_rates['birth_rate_2007'] %></td>
 						<td><%= @birth_rates['birth_rate_2008'] %></td>
 						<td><%= @birth_rates['birth_rate_2009'] %></td>
+					</tr>
+					<tr>
+						<td>Births</td>
+						<td><%= @birth_rates['births_2005'] %></td>
+						<td><%= @birth_rates['births_2006'] %></td>
+						<td><%= @birth_rates['births_2007'] %></td>
+						<td><%= @birth_rates['births_2008'] %></td>
+						<td><%= @birth_rates['births_2009'] %></td>
+					</tr>
+					<tr>
+						<td>Deaths</td>
+						<td><%= @deaths['deaths_2004'] %></td>
+						<td><%= @deaths['deaths_2005'] %></td>
+						<td><%= @deaths['deaths_2006'] %></td>
+						<td><%= @deaths['deaths_2007'] %></td>
+						<td><%= @deaths['deaths_2008'] %></td>
 					</tr>
 				</table>
 			<% end %>
