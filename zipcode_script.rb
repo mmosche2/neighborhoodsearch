@@ -9,7 +9,7 @@ zips["features"].each_with_index do |element, index|
   file.puts('{
   "type": "FeatureCollection", "features": [')
 
-  file.puts element
+  file.puts element.to_json
 
   file.puts "]}"
 end
